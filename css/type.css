@@ -1,0 +1,29 @@
+@-webkit-keyframes typing {
+  0% { width: 0; }
+  animation-iteration-count:infinite;
+}
+@-webkit-keyframes blink {
+  50% { border-color: transparent; }
+  animation-iteration-count:infinite;
+}
+
+#tail { 
+	font-family:roboto;
+    position: absolute;
+    font-size: 1.3em;
+/*
+    margin-right: 30px;
+    margin: 3px;
+    padding: 20px;
+*/
+    color: white;
+	border-right: 1.5px solid;
+	width: 8ch; 
+    text-align: center;
+    vertical-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+    
+	-webkit-animation: typing 2s steps(20, end) infinite, blink .2s step-end infinite;
+    
+}

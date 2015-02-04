@@ -1,0 +1,255 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	text-decoration: none;
+   box-sizing: inherit;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+h1 {
+  font-size:40px;
+  font-weight:bold;
+  color:#191919;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+html {
+
+}
+
+.container {
+
+}
+
+body {
+ height: 200%;
+}
+
+
+.logoContainer {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 100px;
+}
+
+.logoContainer img {
+  width: 230px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+video {
+	min-height: 100%;
+	min-width: 100%;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px; 
+	float: left;
+	z-index: -1;
+}
+
+/*WORK*/
+
+
+
+#work {
+  white-space: nowrap;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+    max-height: 100%;
+    height: auto;
+  
+  
+}
+
+.workContainer {
+    height: auto;
+}
+
+.pics {
+    height: 100vh;
+}
+
+.pics img {
+    height: 100vh;
+}
+
+article {
+  display: inline-block;
+}
+
+
+.in {
+}
+
+
+
+
+/*ABOUT*/
+
+.aboutImg {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-size: cover;
+    }
+
+.aboutText {
+   text-align: left;
+   font-family: georgia;
+   font-size: 1.2em;
+   margin: 5% 20%;
+   line-height: 1.5em; 
+}
+
+.aboutText p {
+     text-align: left;
+}
+
+
+/*NAVIGATION BAR*/
+
+nav {
+  text-align: center;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  margin: 0 auto; 
+  background: rgba(0,0,0,0.4);
+     padding-top: 40px;
+
+ }
+
+nav a {
+   
+	font-size: 1.5em;
+    letter-spacing: 3px;
+    font-family: roboto ;   
+}
+
+nav a:hover {
+	color: white;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+}
+
+.navButton {
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ font-size: 1em;
+ font-weight: 400;
+ line-height: 45px;
+ margin: 0 auto 2em;
+ max-width: 160px;
+ position: relative;
+ text-decoration: none;
+ text-transform: uppercase;
+ vertical-align: middle;
+ width: 100%;
+}
+
+
+.navButton:hover {
+ text-decoration: none;
+}
+
+
+.navButton {
+ letter-spacing: 0;
+}
+
+.navAbout .navButton {
+    color: black;
+    
+}
+
+
+.navButton:hover,
+.navButton:active {
+ letter-spacing: 5px;
+}
+
+
+.navButton:after, 
+.navButton:before {
+ backface-visibility: hidden;
+ border: 1px solid rgba(255, 255, 255, 0);
+ bottom: 0px;
+ content: " ";
+ display: block;
+ margin: 0 auto;
+ position: relative;
+ transition: all 280ms ease-in-out;
+ width: 0;
+}
+
+
+
+
+.navButton:hover:after,
+.navButton:hover:before {
+ backface-visibility: hidden;
+ border-color: #fff;
+ transition: width 350ms ease-in-out;
+ width: 70%;
+}
+
+
+.navButton:hover:before {
+ bottom: auto;
+ top: 0;
+ width: 70%;
+}
+
+#image{
+position:absolute;
+}
+
+.navAbout {
+    background: #fff;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.navAbout 
+.navButton:after, .navAbout
+.navButton:before {
+ backface-visibility: hidden;
+ border: 1px solid rgba(0, 0, 0, 0);
+ bottom: 0px;
+ content: " ";
+ display: block;
+ margin: 0 auto;
+ position: relative;
+ transition: all 280ms ease-in-out;
+ width: 0;
+}
+
+.navAbout
+.navButton:hover:after, .navAbout
+.navButton:hover:before {
+ backface-visibility: hidden;
+ border-color: #000;
+ transition: width 350ms ease-in-out;
+ width: 70%;
+}
+
+.navAbout .navButton {
+    margin-bottom: 0px;
+}
